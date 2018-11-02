@@ -14,3 +14,7 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.display = "none";
 }
+
+function login() {
+    window.location.href = "templates/users/dashboard.html";
+}
