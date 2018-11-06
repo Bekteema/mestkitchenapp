@@ -20,123 +20,175 @@
 </head>
 
 <body>
-    <div id="content">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
-                    <i class="fas fa-align-left"></i>
-                    <span>Toggle Sidebar</span>
-                </button>
-
-            </div>
-        </nav>
-    </div>
-    <div class="wrapper">
-        <!-- Sidebar -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Chow</h3>
-            </div>
-
-            <ul class="list-unstyled components">
-                <p>User</p>
-                <li>
-                    <div>
-                        <img src="../../images/sideimg.jpg" alt="propic" style="width:100px;height:100px;" class="propic">
-                    </div>
-                    <a href="#">Profile</a>
-                </li>
-                <li class="active">
-
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-
-                <li>
-                    <a href="#">Menu</a>
-                </li>
-                <li>
-                    <a href="#">Order</a>
-                </li>
-
-            </ul>
-        </nav>
-        <!-- Creating a picture grid  -->
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="thumbnail">
-                <a href="/w3images/lights.jpg">
-                    <img src="../../images/Eggs.png" alt="Breakfast" style="width:100%" class="pics" class="img-responsive">
-                    <div class="caption">
-                        <p class="txt_format">Breakfast.</p>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <p>Scrabled eggs and oats </p>
-            </div>
-            <!-- star rating -->
-            <div>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </div>
-            <!-- comment label -->
-            <div class="form-group">
-                <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea>
+    <!-- menu heading -->
+    <div class="header">
+        <div class="row">
+            <div class="col-md-12">
+                <H1>Menu</H1>
+                <p> 20 December 2018</p>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="thumbnail">
-                <a href="../../images/IMG_1413.JPG">
-                    <img src="../../images/5216992341ed8ba26111c775920e0712.jpg" alt="Lunch" style="width:70%" class="pics"
-                        class="img-responsive">
-                    <div class="caption">
 
-                        <p class="txt_format">Lunch</p>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <p>Kenkey and Talapia</p>
-            </div>
-            <div>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </div>
-            <!-- comment label -->
-            <div class="form-group">
-                <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea>
+        <!-- drop down button -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="dropdown">
+                    <button class="btn btn-danger dropdown-toggle button_format" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown " aria-haspopup="true" aria-expanded="false">
+                        Daily
+                    </button>
+                    <divS class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Weekly</a>
+                        <a class="dropdown-item" href="#">Monthly</a>
+                </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="thumbnail">
-                <a href="/w3images/fjords.jpg">
-                    <img src="../../images/IMG_1413.JPG" alt="" style="width:100%" class="pics" class="img-responsive">
-                    <p class="txt_format">Supper</p>
+    </div>
+    </div>
+
+    <!-- main container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="content">
+                    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+                    <div class="container-fluid">
+
+                        <!-- <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                <i class="fas fa-align-left"></i>
+                                <span>Toggle Sidebar</span>
+                            </button> -->
+
+                    </div>
+                    </nav>
+                </div>
             </div>
-            <div>
-                <p>Rice and chicken breast stew</p>
+            <div class="wrapper">
+
+                <!-- Sidebar -->
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                        <h3>Chow</h3>
+                    </div>
+
+                    <ul class="list-unstyled components">
+                        <p>User</p>
+                        <li>
+                            <div>
+                                <img src="../../images/sideimg.jpg" alt="propic" style="width:100px;height:100px;"
+                                    class="propic">
+                            </div>
+                            <a href="#">Profile</a>
+                        </li>
+                        <li class="active">
+
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li>
+
+                        <li>
+                            <a href="#">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#">Order</a>
+                        </li>
+
+                    </ul>
+                </nav>
             </div>
-            <div>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+            <!-- Creating a picture grid -->
+            <!-- Breakfast -->
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="/w3images/lights.jpg">
+                        <img src="../../images/Eggs.png" alt="Breakfast" class="img-responsive pics ">
+                        <div class="caption">
+                            <p class="txt_format">Breakfast.</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <p>Scrabled eggs and oats </p>
+                </div>
+                <!-- star rating -->
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <!-- comment label -->
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea>
+                </div>
             </div>
-            <!-- comment label -->
-            <div class="form-group">
-                <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea>
+            <!-- Lunch -->
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="../../images/IMG_1413.JPG">
+                        <img src="../../images/Screenshot 2018-11-04 at 16.29.42.png" alt="Lunch" class="pics" class="img-responsive thumbnail ">
+                        <div class="caption">
+
+                            <p class="txt_format">Lunch</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <p>Kenkey and Talapia</p>
+                </div>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <!-- comment label -->
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea>
+                </div>
             </div>
-            </a>
+            <!-- Dinner  -->
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="/w3images/fjords.jpg">
+                        <img src="../../images/IMG_1413.JPG" alt="dinner" class="pics" class="img-responsive thumbnail">
+                        <p class="txt_format">Supper</p>
+                </div>
+                <div>
+                    <p>Rice and chicken breast stew</p>
+                </div>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <!-- comment label -->
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- drop down button -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="dropdown">
+                    <button class="btn btn-danger" type="button" id="dropdownMenuButton" aria-haspopup="true"
+                        aria-expanded="false">
+                        Daily
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Weekly</a>
+                        <a class="dropdown-item" href="#">Monthly</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </div>
