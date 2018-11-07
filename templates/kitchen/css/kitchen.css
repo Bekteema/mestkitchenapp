@@ -172,3 +172,8 @@ ul ul a {
     opacity: 1;
     margin: 5px auto;
 }
+
+#breakfastPic {
+    height: 75%;
+    width: 75%;
+}
