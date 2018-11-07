@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: #fff;
 }
 
 p {
@@ -16,7 +16,7 @@ p {
 
   .topnavbar {
     overflow: hidden;
-    background-color: rgb(252, 248, 248);
+    background-color: #fff;
     /* border: #292727;
     border-width: 3px; */
   }
@@ -138,4 +138,14 @@ p{
 
 .ordersdata{
     display: flex;
+}
+
+.ratingsdata{
+    display: flex;
+    float: left;
+}
+
+.averatings{
+    font-size: 25px;
+    color: #8D007F;
 }
