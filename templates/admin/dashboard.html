@@ -55,12 +55,12 @@
                 </li>
             </ul>
         </nav>
-        
+    
+    <div class="content">
         <!--Content Form-->
         <div>
             <input type="date" name="orderday" class="fa fa-calendar-times">
             <select class="fas fa-user-clock">
-                <i class="fa fa-calendar-times"></i>
                 <option value="allmeals">All Meals</option>
                 <option value="breakfast">Breakfast</option>
                 <option value="lunch1">Lunch 1</option>
@@ -78,17 +78,18 @@
             <!--Orders Result-->
             <p>Orders:</p>
             <hr>
+            <div class="ordersdata">
             <table>
-                <tr>
-                    <th>Meal</th>
-                    <th>Orders</th>
+                <tr style="background-color: #8D007F; color: #fff;">
+                    <th width="150px">Meal</th>
+                    <th width="100px">Orders</th>
                 </tr>
                 <tbody>
                     <tr>
                         <td>Breakfast</td>
                         <td>23</td>
                     </tr>
-                    <tr>
+                    <tr style="background-color:rgba(146, 4, 132, 0.247);">
                         <td>Lunch 1</td>
                         <td>14</td>
                     </tr>
@@ -96,25 +97,35 @@
                         <td>Lunch 2</td>
                         <td>36</td>
                     </tr>
-                    <tr>
+                    <tr style="background-color:rgba(146, 4, 132, 0.247);">
                         <td>Dinner</td>
                         <td>62</td>
                     </tr>
                 </tbody>
+            </table> 
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <table>
+                <tr>
+                    <th width= "120px", style="background-color: #8D007F; color: #fff;">Total Orders</th>
+                </tr>
+                <tr>
+                    <td style="background-color:rgba(146, 4, 132, 0.247);">64</td>
+                </tr>
             </table>
+            </div>
         </div><br>
 
         <div>
             <!--Ratings Result-->
             <p>Rating:</p>
             <hr>
-            <meter value="0.2">5</meter><br>
-            <meter value="0.5">4</meter><br>
-            <meter value="0.1">3</meter><br>
-            <meter value="0.2">2</meter><br>
-            <meter value="0.0">1</meter><br>
+            <p>5 &nbsp;<meter value="0.2">5</meter></p>
+            <p>4 &nbsp;<meter value="0.5">4</meter></p>
+            <p>3 &nbsp;<meter value="0.1">3</meter></p>
+            <p>2 &nbsp;<meter value="0.2">2</meter></p>
+            <p>1 &nbsp;<meter value="0.0">1</meter></p>
         </div>
-
+        </div>
     </div>
 
     <div>
