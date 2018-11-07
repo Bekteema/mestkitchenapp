@@ -10,8 +10,8 @@
 }
 
 #sidebar {
-    min-width: 200px;
-    max-width: 200px;
+    min-width: 250px;
+    max-width: 250px;
 }
 
 .topnav {
@@ -48,7 +48,6 @@
     padding: 0px 0px;
     text-decoration: none;
     width: 10%;
-    height: 10%;
 }
 
 #sidebar.active {
