@@ -313,3 +313,24 @@ ul ul a {
     width: 50px;
     height: 30px;
 }
+
+.pillbutton {
+    background-color: #ddd;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 150px;
+    float: right;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active,
+.btn:hover {
+    background-color: #FF6221;
+    color: white;
+}

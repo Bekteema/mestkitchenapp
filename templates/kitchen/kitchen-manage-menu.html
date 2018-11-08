@@ -38,20 +38,21 @@
         </div>
 
         <div class="wrapper">
+
         <!-- Sidebar -->
-            <nav id="sidebar">
-                    <div class="sidebar-header">
-                            <h3 id="welcomemsg">Welcome </h3>
-                    </div>
-                    <ul class="list-unstyled components">
-                            <li  class="active">
-                                    <a href="#">Navigation</a>
-                            </li>
+        
+        <nav id="sidebar">
+                <div class="sidebar-header">
+                        <h3 id="welcomemsg">Welcome </h3>
+                </div>
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#kitchenSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">My Kitchen</a>
+                        <ul class="collapse list-unstyled" id="kitchenSubmenu">
                             <li>
                                 <a href="kitchen-dashboard.html">Dashboard</a>
                             </li>
                             <li>
-                                <a href="#" class="active">Manage Menu</a>
                                 <a href="kitchen-manage-menu.html">Manage Menu</a>
                             </li>
                             <li>
@@ -63,9 +64,21 @@
                             <li>
                                 <a href="../../index.html">Logout</a>
                             </li>
-                    </ul>
+                        </ul>
                     </li>
+                </ul>
             </nav>
+            <div id="content">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div id="content">
+                                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                        <div>
+                </nav>
+            </div>
                 
             <!-- Upper items -->
 
@@ -90,6 +103,21 @@
                     <div class="col-md-6"></div>
                     <div class="w-100"></div>
                 </div>
+
+            <!-- Pills -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-pills nav-justified">
+                            <li> <button class="pillbutton">Monday</button></li>
+                            <li> <button class="pillbutton active">Tuesday</button></li>
+                            <li> <button class="pillbutton">Wednesday</button></li>
+                            <li> <button class="pillbutton">Thursday</button></li>
+                            <li> <button class="pillbutton">Friday</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
 
             <!-- Page Content -->
 
@@ -132,7 +160,7 @@
                     </div>
 
                     <!-- Update Chow Button -->
-                    <br></br>
+                    <br>
                     <a href="#" class="btn btn-primary" id="update">Update Chow</a>
                 </div>
             </div>
