@@ -31,11 +31,12 @@ a, a:hover, a:focus {
   .logo {
     float: left;
     display: block;
+    position: relative;
     /* color: #4d4d4d; */
     text-align: center;
     /* padding: 10px 16px;  */
     text-decoration: none;
-    width: 100px;
+    width: 150px;
  }
 
  .iconstopnav{
