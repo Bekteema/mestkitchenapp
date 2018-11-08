@@ -156,6 +156,7 @@ p{
 .ratingsdata{
     display: flex;
     float: left;
+    width: 100rem;
 }
 
 .averatings{
