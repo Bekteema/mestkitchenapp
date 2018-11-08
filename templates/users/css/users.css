@@ -22,11 +22,9 @@ a, a:hover, a:focus {
 
   .topnavbar {
     overflow: hidden;
-<<<<<<< HEAD
     background-color: rgb(255, 255, 255);
 =======
     background-color: #fff;
->>>>>>> 8137f515017d26b8e8ac9a786445c78c42edd891
     height: 90px
     /* border: #292727;
     border-width: 3px; */
