@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../../templates/admin/main.js" defer></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Dashboard</title>
+    <title>Manage Accounts</title>
 </head>
 
 <body>
     <div class="topnavbar">
         <!--Top Navigation Bar-->
         <nav>
-            <img src="../../images/logo.png" alt="Logo" class="logo">
+            <img src="../../images/Logo_purple.png" alt="Logo" class="logo">
             <div class="iconstopnav">
                 <button class="btn"><i class="fa fa-bell"></i></button>
                 <button class="btn"><i class="fa fa-home"></i></button>
@@ -38,25 +38,27 @@
         <!-- Sidebar -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h5>Welcome Admin</h5>
+                    <h3 id="welcomemsg">Welcome </h3>
             </div>
 
             <ul class="list-unstyled components">
-                <p>Navigation</p>
-                <li class="active">
-                    <a href="dashboard.html">Home</a>
+                <li  class="active">
+                        <a href="#">Navigation</a>
+                </li>
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
                 </li>
                 <li>
                     <a href="menu.html">Menu</a>
                 </li>
-                <li>
+                <li  class="active">
                     <a href="accounts.html">Accounts</a>
                 </li>
                 <li>
-                    <a href="#">User Feedbacks</a>
+                    <a href="userfeedback.html">User Feedbacks</a>
                 </li>
                 <li>
-                    <a href="index.html">Logout</a>
+                    <a href="../../index.html">Logout</a>
                 </li>
             </ul>
         </nav>

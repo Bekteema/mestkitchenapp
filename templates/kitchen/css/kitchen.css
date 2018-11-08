@@ -344,4 +344,32 @@ ul ul a {
 
 .fa-minus-circle {
     color: red;
+.content{
+    padding-left: 20px;
+    width: 80%;
+}
+
+p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.ordersdata{
+    display: flex;
+}
+
+.ratingsdata{
+    display: flex;
+    float: left;
+    width: 100rem;
+}
+
+.averatings{
+    font-size: 25px;
+    color: #8D007F;
+}
+
+.fas fa-user-clock{
+    display: flex;
+    width: 100px;
 }
