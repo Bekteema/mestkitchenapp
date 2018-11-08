@@ -49,12 +49,13 @@
   .logo {
     float: left;
     display: block;
-    color: #4d4d4d;
-    /*background-color: rgb(255, 255, 255);*/
+    position: relative;
+    /* color: #4d4d4d; */
     text-align: center;
-    padding: 0px 0px;
+    /* padding: 10px 16px;  */
     text-decoration: none;
-    width: 7%;
+    width: 9%;
+    margin-top: 0px;
 }
 
 #sidebar.active {

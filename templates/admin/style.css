@@ -36,7 +36,8 @@ a, a:hover, a:focus {
     text-align: center;
     /* padding: 10px 16px;  */
     text-decoration: none;
-    width: 150px;
+    width: 9%;
+    margin-top: 0px;
  }
 
  .iconstopnav{
@@ -160,6 +161,10 @@ p{
 .averatings{
     font-size: 25px;
     color: #8D007F;
+}
+
+.menudata{
+    display: flex;
 }
 
 /* Animating the toggle button */
