@@ -1,6 +1,66 @@
 .wrapper {
     display: flex;
     align-items: stretch;
+    perspective: 1500px; 
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    transform-origin: center left; /* Set the transformed position of sidebar to center left side. */
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(248, 248, 248);
+    height: 90px
+  }
+  
+  .topnav a .btn {
+    float: left;
+    display: block;
+    color: #292727;
+    text-align: center;
+    padding: 33px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  
+  .topnav a:hover {
+    background-color: #FF6221;
+    color: rgb(248, 241, 241);
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+  .pull-right{
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+  .logo {
+    float: left;
+    display: block;
+    color: #4d4d4d;
+    /*background-color: rgb(255, 255, 255);*/
+    text-align: center;
+    padding: 0px 0px;
+    text-decoration: none;
+    width: 7%;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    margin-left: -250px;
+    transform: rotateY(100deg); /* Rotate sidebar vertically by 100 degrees. */
 }
 
 #sidebar {
@@ -9,14 +69,18 @@
     min-height: 100vh;
 }
 
-#sidebar.active {
-    margin-left: -250px;
-}
-
 a[data-toggle="collapse"] {
     position: relative;
 }
 
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
 .dropdown-toggle::after {
     display: block;
     position: absolute;
@@ -66,10 +130,14 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #FF6221;
+}
+
 #sidebar ul.components {
     padding: 20px 0;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #FF6221;
 }
 
 #sidebar ul p {
@@ -88,8 +156,8 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #FF6221;
+    color: #FF6221;
+    background: rgb(255, 255, 255);
 }
 ul ul a {
     font-size: 0.9em !important;
@@ -203,4 +271,40 @@ ul ul a {
     float: right;
     background-color: #FF6221;
     border: #FF6221;
+}
+
+/* Animating the toggle button */
+
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+}
+
+#sidebarCollapse span {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    background: #555;
+    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+}
+#sidebarCollapse span:first-of-type {
+    /* rotate first one */
+    transform: rotate(45deg) translate(2px, 2px);
+}
+#sidebarCollapse span:nth-of-type(2) {
+    /* second one is not visible */
+    opacity: 0;
+}
+#sidebarCollapse span:last-of-type {
+    /* rotate third one */
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+#sidebarCollapse.active span {
+    /* no rotation */
+    transform: none;
+    /* all bars are visible */
+    opacity: 1;
+    margin: 5px auto;
 }
