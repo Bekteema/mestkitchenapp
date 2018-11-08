@@ -1,113 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../css/bootstrap-4.1.3-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../../templates/users/users.css">
+    <link rel="stylesheet" href="../../templates/users/template.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <!-- Update User Information  -->
-    <div class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="card">
-                        <div class="card-header card-header-primary">
-                            <h4 class="card-title">Edit Profile</h4>
-                            <p class="card-category">Complete your profile</p>
-                        </div>
-                        <div class="card-body">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">First Name</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Surname </label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Email address</label>
-                                            <input type="email" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Fist Name</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Last Name</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div> -->
-                                <!-- </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label class="bmd-label-floating">Adress</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div> -->
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Country</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Status</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <!-- <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Postal Code</label>
-                                            <input type="text" class="form-control">
-                                        </div> -->
-                                </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Allergies</label>
-                                    </div>
-                                    <label>Special Diet Details</label>
-                                    <div class="form-group">
-                                        <!-- <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so
-                                                    thirsty, I'm in that two seat Lambo.</label> -->
-                                        <textarea class="form-control" rows="3"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
 
-                        <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
-                        <div class="clearfix"></div>
-                        </form>
+    <div class="topnav" id="myTopnav">
+        <img id="kitchenLogo" src="../../images/Redlogo.png" alt="Chow kitchen logo">
+
+        <!-- <div> -->
+        <!-- profile section -->
+
+        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#kitchenSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">My
+                        Kitchen</a>
+                    <ul class="collapse list-unstyled" id="kitchenSubmenu">
+                        <li>
+                            <a href="#" class="active">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#">Order</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- <div id="content">
+            <!<nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div id="content">
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button> -->
+        <!-- <div>
+                <!-- </nav> -->
+        <!-- Page Content -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <H1>Make Your Order</H1>
+                    <p> 20 December 2018</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Preference
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Vegetarian</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Days of the week -->
+            <!-- Centered Tabs -->
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs nav-justified">
+                        <li> <span a href="#">Monday</a></li></span>
+                        <li><span a href="#">Tuesday</a></li></span>
+                        <li><span a href="#">Wednesday</a></li></span>
+                        <li><a href="#">Thursday</a></li>
+                        <li><a href="#">Friday</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
 </body>
 
 </html>

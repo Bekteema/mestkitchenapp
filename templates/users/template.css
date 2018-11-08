@@ -27,9 +27,23 @@ a[data-toggle="collapse"] {
 
 .btn {
     background-color: #d71f29;
-    width: 101px;
+    width: 120px;
     float: right
 }
+
+.checked {
+    color: orange;
+}
+
+.info {
+    float: right;
+    border: 1px dotted gray;
+    text-align: end;
+    width: 10px;
+
+}
+
+
 
 @media (max-width: 768px) {
     #sidebar {
@@ -121,10 +135,11 @@ ul ul a {
     overflow: hidden;
     background: #fff;
     height: 90px;
+
 }
 
 .topnav a {
-    float: left;
+    float: right;
     display: block;
     color: #292727;
     text-align: center;
@@ -141,6 +156,7 @@ ul ul a {
 
 .topnav .icon {
     display: none;
+    float: right;
 }
 
 .pull-right {
@@ -187,4 +203,112 @@ ul ul a {
 
 #containers {
     float: right;
+}
+
+/* Profile section top  */
+.navbar-login {
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session {
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size {
+    font-size: 87px;
+}
+
+/* send button */
+.center {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+button {
+    width: 80px;
+    padding: 12px 18px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: #CDCDCD;
+    border: 1px red;
+    border-radius: 3px;
+    position: relative;
+
+    &:hover {
+        background-color: #FFD54F;
+    }
+
+    &:focus {
+        outline: none;
+        background-color: #D4E157;
+    }
+}
+
+i {
+    margin-left: 12px;
+}
+
+.plane {
+    position: absolute;
+    right: 18px;
+}
+
+.fa-check,
+.fade {
+    animation: fade 2s;
+    animation-fill-mode: forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inline;
+}
+
+.fly {
+    position: absolute;
+    animation-name: a;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+}
+
+.done {
+    background-color: #D4E157;
+
+    &:hover {
+        background-color: #D4E157;
+    }
+}
+
+@keyframes fade {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
+@keyframes a {
+    0% {
+        top: 10px;
+        left: 80px;
+    }
+
+    100% {
+        top: -10000px;
+        left: 10000px;
+        transform: scale(-5);
+    }
 }
