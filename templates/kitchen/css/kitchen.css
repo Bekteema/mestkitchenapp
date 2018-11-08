@@ -151,6 +151,7 @@ a, a:hover, a:focus {
     font-size: 1.1em;
     display: block;
 }
+
 #sidebar ul li a:hover {
     color: #FF6221;
     background: #fff;
@@ -160,6 +161,7 @@ a, a:hover, a:focus {
     color: #FF6221;
     background: rgb(255, 255, 255);
 }
+
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
@@ -290,18 +292,22 @@ ul ul a {
     background: #555;
     transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
 }
+
 #sidebarCollapse span:first-of-type {
     /* rotate first one */
     transform: rotate(45deg) translate(2px, 2px);
 }
+
 #sidebarCollapse span:nth-of-type(2) {
     /* second one is not visible */
     opacity: 0;
 }
+
 #sidebarCollapse span:last-of-type {
     /* rotate third one */
     transform: rotate(-45deg) translate(1px, -1px);
 }
+
 #sidebarCollapse.active span {
     /* no rotation */
     transform: none;
@@ -309,7 +315,29 @@ ul ul a {
     opacity: 1;
     margin: 5px auto;
 }
+
 .meal{
     width: 50px;
     height: 30px;
+}
+
+.pillbutton {
+    background-color: #ddd;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 150px;
+    float: right;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active,
+.btn:hover {
+    background-color: #FF6221;
+    color: white;
 }
