@@ -177,3 +177,22 @@ ul ul a {
     height: 75%;
     width: 75%;
 }
+
+.card-img-top{
+    width: 18rem;
+    height: 12rem;
+}
+
+.meal-banner{
+    font-size: 40px;
+}
+
+.btn-secondary{
+    float: right;
+}
+
+#update {
+    float: right;
+    background-color: #FF6221;
+    border: #FF6221;
+}
