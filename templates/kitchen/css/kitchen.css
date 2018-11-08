@@ -274,7 +274,6 @@ ul ul a {
     border: #FF6221;
 }
 
-<<<<<<< HEAD
 /* Animating the toggle button */
 
 #sidebarCollapse {
@@ -309,9 +308,7 @@ ul ul a {
     /* all bars are visible */
     opacity: 1;
     margin: 5px auto;
-=======
 .meal{
     width: 50px;
     height: 30px;
->>>>>>> master
 }
