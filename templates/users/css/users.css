@@ -159,7 +159,7 @@ a, a:hover, a:focus {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: rgb(212, 89, 95);
+    background: #D71F29;
 }
 
 /* Animating the toggle button */
