@@ -19,7 +19,7 @@
     height: 90px
   }
   
-  .topnav a .btn {
+  .topnav a {
     float: left;
     display: block;
     color: #292727;
@@ -31,7 +31,7 @@
 
   
   .topnav a:hover {
-    background-color: #FF6221;
+    background-color: #D71F29;
     color: rgb(248, 241, 241);
   }
   
@@ -41,9 +41,6 @@
 
   .pull-right{
     float: right;
-    margin-top: 30px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
 }
 
   .logo {
@@ -125,19 +122,19 @@ a, a:hover, a:focus {
 
 #sidebar {
     /* don't forget to add all the previously mentioned styles here too */
-    background: #FF6221;
+    background: #D71F29;
     color: #fff;
     transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #FF6221;
+    background: #D71F29;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #FF6221;
+    border-bottom: 1px solid rgb(192, 59, 65);
 }
 
 #sidebar ul p {
@@ -151,129 +148,20 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #FF6221;
+    color: #D71F29;
     background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #FF6221;
+    color: #D71F29;
     background: rgb(255, 255, 255);
 }
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #FF6221;
+    background: #D71F29;
 }
 
-#kitchenLogo{
-    /* width: 250px;
-    height: 100%;
-    padding: -50px;
-    float: left;
-    display: block; */
-    float: left;
-    display: block;
-    color: #4d4d4d;
-    /*background-color: rgb(255, 255, 255);*/
-    text-align: center;
-    padding: 0px 0px;
-    text-decoration: none;
-    width: 7%;
-}
-
-.topnav {
-    overflow: hidden;
-    background: #fff;
-    height: 90px;
-  }
-  
-  .topnav a {
-    float: left;
-    display: block;
-    color: #292727;
-    text-align: center;
-    padding: 33px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  
-  .topnav a:hover {
-    background-color: #FF6221;
-    color: rgb(248, 241, 241);
-  }
-  
-  .topnav .icon {
-    display: none;
-  }
-
-  .pull-right{
-      float: right;
-  }
-
- #sidebarCollapse {
-    width: 40px;
-    height: 40px;
-    background: #f5f5f5;
-}
-
-#sidebarCollapse span {
-    width: 80%;
-    height: 2px;
-    margin: 0 auto;
-    display: block;
-    background: #555;
-    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
-}
-
-#sidebarCollapse span:first-of-type {
-    /* rotate first one */
-    transform: rotate(45deg) translate(2px, 2px);
-}
-
-#sidebarCollapse span:nth-of-type(2) {
-    /* second one is not visible */
-    opacity: 0;
-}
-
-#sidebarCollapse span:last-of-type {
-    /* rotate third one */
-    transform: rotate(-45deg) translate(1px, -1px);
-}
-
-#sidebarCollapse.active span {
-    /* no rotation */
-    transform: none;
-    /* all bars are visible */
-    opacity: 1;
-    margin: 5px auto;
-}
-
-#breakfastPic {
-    height: 75%;
-    width: 75%;
-}
-
-.card-img-top{
-    width: 18rem;
-    height: 12rem;
-}
-
-.meal-banner{
-    font-size: 40px;
-}
-
-.btn-secondary{
-    float: right;
-}
-
-#update {
-    float: right;
-    background-color: #FF6221;
-    border: #FF6221;
-}
-
-<<<<<<< HEAD
 /* Animating the toggle button */
 
 #sidebarCollapse {
@@ -308,9 +196,4 @@ ul ul a {
     /* all bars are visible */
     opacity: 1;
     margin: 5px auto;
-=======
-.meal{
-    width: 50px;
-    height: 30px;
->>>>>>> master
 }
