@@ -149,3 +149,8 @@ p{
     font-size: 25px;
     color: #8D007F;
 }
+
+.menudata{
+    display: flex;
+    height: 250px;
+}
