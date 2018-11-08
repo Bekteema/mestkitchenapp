@@ -1,0 +1,8 @@
+The database contains about 4 different tables: Users, Menu, Order and Meal.
+
+They all share the following attributes: UserType, Meal Category.
+
+Where the datatypes are defined, at least you guys are familiar with datatypes.
+The datatype object means a collection of smaller datasets, under the table user for example, 
+on the attribute categories, the datatype is: [MealCategory], it measn its a collection of the data collected from 
+teh shared attributes. Same as other things in the that have object as datatype.
