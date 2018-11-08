@@ -23,15 +23,21 @@
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+    <!-- Top Nav Bar  -->
 
     <div class="topnav" id="myTopnav">
         <img id="kitchenLogo" src="../../images/Redlogo.png" alt="Chow kitchen logo">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a>
+            </li>
+        </ul>
 
         <!-- <div> -->
         <!-- profile section -->
 
         <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
-        <i class="fa fa-bars"></i>
+        <!-- <i class="fa fa-bars"></i> -->
         </a>
     </div>
     <div class="wrapper">
@@ -103,82 +109,127 @@
                 </div>
             </div>
             <br>
-            <!-- Picture Grid -->
+            <!-- Select Meals -->
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Please select Your Meal for the day</p>
+                </div>
+            </div>
+
+            <!-- Picture Grid s-->
             <!-- option 1 -->
             <div class="row">
-                <div class="col-md-3">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="meal-banner">Lunch Option 1</div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../images/IMG_1413.JPG" alt="Breakfast">
+                        <div class="card-body">
+                            <h5 class="card-title">Oats, eggs, bread and Fruit</h5>
+                            <p class="card-text">Food description to be auto populated from database based on what
+                                was loaded in the database</p>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="materialChecked2" checked>
+                                <label class="form-check-label" for="materialChecked2">Select</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="thumbnail">
                         <a href="/w3images/lights.jpg">
                             <img src="../../images/Eggs.png" alt="Breakfast" class="img-responsive pics ">
                             <div class="caption">
                                 <!-- <p class="txt_format">Lunch Option 1.</p> -->
-                                <!-- Material checked -->
-                                <div class="form-check">
+                <!-- Material checked -->
+                <!-- <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="materialChecked2" checked>
                                     <label class="form-check-label" for="materialChecked2">Lunch Option 1</label>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                </div>
+                        </a> -->
+
                 <!-- option 2 -->
-                <div class="col-md-3">
-                    <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="meal-banner">Lunch Option 2</div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../images/IMG_1413.JPG" alt="Breakfast">
+                        <div class="card-body">
+                            <h5 class="card-title">Oats, eggs, bread and Fruit</h5>
+                            <p class="card-text">Food description to be auto populated from database based on what
+                                was loaded in the database</p>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="materialChecked2" checked>
+                                <label class="form-check-label" for="materialChecked2">Select</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="thumbnail">
                         <a href="/w3images/lights.jpg">
                             <img src="../../images/Eggs.png" alt="Breakfast" class="img-responsive pics ">
-                            <div class="caption">
-                                <!-- <p class="txt_format">Lunch Option2 .</p> -->
-                                <!-- Material checked -->
-                                <div class="form-check">
+                            <div class="caption"> -->
+                    <!-- <p class="txt_format">Lunch Option2 .</p> -->
+                    <!-- Material checked -->
+                    <!-- <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="materialChecked2" checked>
                                     <label class="form-check-label" for="materialChecked2">Lunch Option 2</label>
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- option 3 -->
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a href="/w3images/lights.jpg">
-                            <img src="../../images/Eggs.png" alt="Breakfast" class="img-responsive pics ">
-                            <div class="caption">
-                                <!-- <p class="txt_format">Dinner</p> -->
-                                <!-- Material checked -->
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="materialChecked2" checked>
-                                    <label class="form-check-label" for="materialChecked2">Dinner</label>
-                                </div>
+                <div class="col-md-4">
+                    <div class="meal-banner">DINNER</div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../../images/IMG_1413.JPG" alt="Breakfast">
+                        <div class="card-body">
+                            <h5 class="card-title">Oats, eggs, bread and Fruit</h5>
+                            <p class="card-text">Food description to be auto populated from database based on what
+                                was loaded in the database</p>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="materialChecked2" checked>
+                                <label class="form-check-label" for="materialChecked2">Select</label>
                             </div>
-                        </a>
+                        </div>
                     </div>
+                </div>
+
+                <!-- <p class="txt_format">Dinner</p> -->
+                <!-- Material checked -->
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="materialChecked2" checked>
+                    <label class="form-check-label" for="materialChecked2">Dinner</label>
                 </div>
             </div>
-            <!-- unselect all button -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="dropdown">
-                        <button class="btn" class="btn_white" type="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            Unselect all
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <!-- Order Button -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary " type="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            Order
-                        </button>
-                    </div>
-                </div>
+
+            </a>
+        </div>
+    </div>
+    </div>
+    <!-- unselect all button -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="dropdown">
+                <button class="btn" class="btn_white" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Unselect all
+                </button>
             </div>
         </div>
+    </div>
+    <br>
+    <br>
+    <!-- Order Button -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="dropdown">
+                <button class="btn btn-secondary " type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Order
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>

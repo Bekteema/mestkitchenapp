@@ -243,6 +243,13 @@ ul ul a {
     float: right;
 }
 
+/* Style the active class (and buttons on mouse-over) */
+.active,
+.btn:hover {
+    background-color: red;
+    color: white;
+}
+
 .btn btn_white {
     width: 80px;
     padding: 12px 18px;
