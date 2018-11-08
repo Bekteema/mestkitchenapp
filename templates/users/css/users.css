@@ -153,8 +153,8 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: rgb(202, 94, 100);
+    color: #D71F29;
+    background: rgb(255, 255, 255);
 }
 ul ul a {
     font-size: 0.9em !important;
