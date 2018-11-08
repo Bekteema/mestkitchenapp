@@ -37,33 +37,47 @@
         </div>
 
         <div class="wrapper">
+
         <!-- Sidebar -->
-            <nav id="sidebar">
+        
+        <nav id="sidebar">
                 <div class="sidebar-header">
                         <h3 id="welcomemsg">Welcome </h3>
                 </div>
                 <ul class="list-unstyled components">
-                        <li  class="active">
-                                <a href="#">Navigation</a>
-                        </li>
-                        <li>
-                            <a href="#">Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="#">Manage Menu</a>
-                        </li>
-                        <li>
-                            <a href="#" class="active">Manage Meals</a>
-                        </li>
-                        <li>
-                            <a href="#">User Feedback</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Logout</a>
-                        </li>
+                    <li class="active">
+                        <a href="#kitchenSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">My Kitchen</a>
+                        <ul class="collapse list-unstyled" id="kitchenSubmenu">
+                            <li>
+                                <a href="kitchen-dashboard.html">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="kitchen-manage-menu.html">Manage Menu</a>
+                            </li>
+                            <li>
+                                <a href="kitchen-manage-meals.html">Manage Meals</a>
+                            </li>
+                            <li>
+                                <a href="kitchen-user-feedback.html">User Feedback</a>
+                            </li>
+                            <li>
+                                <a href="../../index.html">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-                </li>
             </nav>
+            <div id="content">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div id="content">
+                                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                        <div>
+                </nav>
+            </div>
 
             <!-- Upper items -->
 
